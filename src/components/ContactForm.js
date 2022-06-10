@@ -29,20 +29,20 @@ const ContactForm = () => {
       );
   };
   return (
-    <div className="bg-indigo-100 pb-24">
+    <div style={{backgroundColor: "rgb(48, 52, 60)"}} className="pb-24">
       <div className="flex flex-col items-center justify-center py-24">
-        <h1 className="font-inter text-4xl font-bold">
+        <h1 className="text-white text-4xl font-bold">
           Get in Touch
         </h1>
       </div>
-      <div class="hero bg-indigo-100" id="contact-form">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-          <div class="text-center lg:text-left">
-            <h1 className="font-inter text-2xl font-bold">
+      <div style={{backgroundColor: "rgb(48, 52, 60)"}} className="hero" id="contact-form">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+          <div className="text-center text-white lg:text-left">
+            <h1 className="text-2xl font-bold">
               Contact Info
             </h1>
-            <div className="w-96 flex flex-col items-center lg:items-start mt-4 font-caladea">
-              <div class="flex items-center gap-2">
+            <div className="w-80 md:w-96 flex flex-col items-center lg:items-start mt-4">
+              <div className="flex items-center gap-2 mb-3">
                 <span>
                   <MdEmail />
                 </span>
@@ -50,13 +50,13 @@ const ContactForm = () => {
                   nasim8382@gmail.com
                 </span>
               </div>
-              <div class="flex items-center gap-2">
+              <div className="flex items-center gap-2 mb-3">
                 <span>
                   <BsFillPhoneFill />
                 </span>
                 <span className="font-bold">+8801746058698</span>
               </div>
-              <div class="flex items-center gap-2">
+              <div className="flex items-center gap-2">
                 <span>
                   <FaMapMarkerAlt />
                 </span>
@@ -66,42 +66,42 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form ref={form} onSubmit={sendEmail} class="card-body">
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">Name</span>
+          <div style={{backgroundColor: "rgb(32, 32, 32)"}} className="card flex-shrink-0 w-full max-w-sm shadow-2xl mt-16 md:mt-0">
+            <form ref={form} onSubmit={sendEmail} className="card-body">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text text-white">Name</span>
                 </label>
                 <input
                   type="text"
                   placeholder="name"
-                  class="input input-bordered"
+                  className="input input-bordered"
                   name="user_name"
                 />
               </div>
 
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">Email</span>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text text-white">Email</span>
                 </label>
                 <input
                   type="email"
                   name="user_email"
                   placeholder="email"
-                  class="input input-bordered"
+                  className="input input-bordered"
                 />
               </div>
 
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">Message</span>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text text-white">Message</span>
                 </label>
-                <textarea name="message" class="input input-bordered" />
+                <textarea name="message" className="input input-bordered" />
               </div>
 
-              <div class="form-control mt-6">
+              <div className="form-control mt-6">
                 <input
-                  className="btn btn-primary hover:bg-transparent hover:border-primary hover:text-primary tracking-widest"
+                  className="cursor-pointer rounded-full bg-gray-600 px-7 py-3 text-center border text-sm font-bold uppercase text-white transition duration-200 ease-in-out hover:bg-white hover:text-black"
                   type="submit"
                   value="Send"
                 />

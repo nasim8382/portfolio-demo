@@ -2,12 +2,12 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="bg-amber-100">
+    <div style={{backgroundColor: "rgb(25, 25, 25)"}}>
       <div className="container mx-auto">
         <div className="navbar ">
           <div className="navbar-start">
             <div className="dropdown">
-              <label tabindex="0" className="btn btn-ghost lg:hidden">
+              <label tabIndex="0" className="btn btn-white lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -16,25 +16,30 @@ const Navbar = () => {
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M4 6h16M4 12h8m-8 6h16"
                   />
                 </svg>
               </label>
               <ul
-                tabindex="0"
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                tabIndex="0"
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-black text-white rounded-box w-52"
               >
                 <li>
-                  <a href="#home">
-                    Home
+                  <a href="#about">
+                    About
                   </a>
                 </li>
                 <li>
                   <a href="#projects">
                     Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="#blogs">
+                    Blogs
                   </a>
                 </li>
                 <li>
@@ -44,18 +49,25 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-2xl tracking-widest font-bold">
+            <a href="#home" className="btn btn-ghost text-2xl tracking-widest font-semibold text-white">
               Md. Nasim Reza
             </a>
           </div>
           <div className="navbar-end hidden lg:flex ">
-            <ul className="menu menu-horizontal p-0 font-inter text-xl font-bold">
+            <ul className="menu menu-horizontal p-0 text-white text-xl">
               <li>
-                <a href="#home">Home</a>
-              </li>
+                  <a href="#about">
+                    About
+                  </a>
+                </li>
               <li>
                 <a href="#projects">Projects</a>
               </li>
+              <li>
+                  <a href="#blogs">
+                    Blogs
+                  </a>
+                </li>
               <li>
                 <a href="#contact-form">Contact</a>
               </li>

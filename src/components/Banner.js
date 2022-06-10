@@ -1,33 +1,23 @@
 import React from "react";
-import profileImg from '../images/profile-pic.png';
+import bannerImg from '../images/banner.jpg';
 
 const Banner = () => {
   return (
     <div>
-      <div class="hero py-24 bg-indigo-100 mb-12">
-        <div class="hero-content flex-col lg:flex-row">
-          <img
-            src={profileImg}
-            class="max-w-sm rounded-lg shadow-2xl"
-            alt="Nasim Reza"
-          />
+      <div
+        className="hero min-h-screen"
+        style={{backgroundImage: `url(${bannerImg})`}}
+      >
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
           <div>
-            <h1 class="text-4xl font-bold">
-              Hi, I'm Md. Nasim Reza
-            </h1>
-            <p class="py-2 text-xl">
-              MERN Stack Developer
-            </p>
-
-            <p className="py-6 font-poppins">
-            A software enthusiast who is passionate about mastering computer science skills and expertise. Always enthusiastic to study new science-related technologies and wanting to work as a professional web developer.
-            </p>
-            <a
-              href="Nasim_Reza_Resume.pdf"
+            <h2 className="mb-8 text-3xl font-bold ">I Am Md. Nasim Reza</h2>
+            <h1 className="mb-16 text-6xl font-bold ">MERN Stack Developer</h1>
+            <a 
+            href="Nasim_Reza_Resume.pdf"
               download="Nasim_Reza_Resume.pdf"
-              class="btn btn-primary"
-            >
-              Download Resume
+               className="cursor-pointer rounded-full bg-gray-600 px-7 py-3 text-center border text-sm font-bold uppercase text-white transition duration-200 ease-in-out hover:bg-white hover:text-black">
+                 Download Resume
             </a>
           </div>
         </div>
